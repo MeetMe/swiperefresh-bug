@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="com.example.swiperefreshlayout.visibility.SwipeRefreshBugActivity">
+
+    <!-- This one will continue drawing if isRefreshing and not visible -->
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srl1"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#3333"
+            android:gravity="center"
+            android:text="Base SwipeRefreshLayout."
+            android:textColor="#fff"/>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <!-- This one is fixed and will properly disappear -->
+    <com.example.swiperefreshlayout.visibility.FixedSwipeRefreshLayout
+        android:id="@+id/srl2"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#bbb"
+            android:gravity="center"
+            android:text="Fixed SwipeRefreshLayout."
+            android:textColor="#000"/>
+    </com.example.swiperefreshlayout.visibility.FixedSwipeRefreshLayout>
+</LinearLayout>
