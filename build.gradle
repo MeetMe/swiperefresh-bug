@@ -3,7 +3,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:1.0.1'
+        classpath 'com.android.tools.build:gradle:2.1.0'
     }
 }
 
@@ -11,7 +11,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 19
-    buildToolsVersion '21.1.2'
+    buildToolsVersion '24.0.0'
 
     defaultConfig {
         applicationId "com.example.swiperefreshlayout.visibility"
@@ -22,5 +22,5 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:support-v4:21.+'
+    compile 'com.android.support:support-v4:24.0.0'
 }
